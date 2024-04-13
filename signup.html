@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        <!--
+            function validate()
+            {
+                if( document.myForm.Name.Value =="")
+                {
+                    alert("please provide your name!" );
+                    document.myForm.Name.focus();
+                    return false;
+                }
+            }
+            if( document.myForm.Email.Value =="")
+                {
+                    alert("please provide your Email!" );
+                    document.myForm.Email.focus();
+                    return false;
+                }
+            
+            if( document.myForm.Phone.Value =="")
+                {
+                    alert("please provide your Phone!" );
+                    document.myForm.phone.focus();
+                    return false;
+                }
+            
+            if( document.myForm.Password.Value =="")
+                {
+                    alert("please provide your Password!" );
+                    document.myForm.Password.focus();
+                    return false;
+                }
+            if( document.myForm.Confirm Password.Value =="")
+                {
+                    alert("please provide your Confirm Password!" );
+                    document.myForm.Confirm Password.focus();
+                    return false;
+                }
+
+                
+            
+            -->
+    </script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(36, 181, 162);
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .submit-button {
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .s
+      ubmit-button:hover {
+        background-color: #cc5500;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Register Now</h1>
+    <p>Fill out the form below to reserve your spot</p>
+  </header>
+  <form action="index.html" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="passwd">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+        <label for="passwd">Confirm-Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+    <button type="submit" value="submit-button">Submit</button>
+  </form>
+</body>
+</html>
